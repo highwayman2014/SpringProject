@@ -4,4 +4,15 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <!-- Объявляем сервлет -->
+  <servlet>
+    <servlet-name>ProductsServlet</servlet-name>
+    <servlet-class>com.shepa.servlet.ProductsServlet</servlet-class>
+  </servlet>
+  <!-- Привязываем сервлет к URL -->
+  <servlet-mapping>
+    <servlet-name>ProductsServlet</servlet-name>
+    <url-pattern>/products</url-pattern>
+  </servlet-mapping>
+
 </web-app>
