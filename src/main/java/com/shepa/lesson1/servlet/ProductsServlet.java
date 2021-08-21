@@ -1,6 +1,6 @@
-package com.shepa.servlet;
+package com.shepa.lesson1.servlet;
 
-import com.shepa.goods.Product;
+import com.shepa.lesson1.goods.Product;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;

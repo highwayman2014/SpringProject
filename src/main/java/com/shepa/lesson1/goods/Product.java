@@ -1,4 +1,4 @@
-package com.shepa.goods;
+package com.shepa.lesson1.goods;
 
 public class Product {
     private int id;

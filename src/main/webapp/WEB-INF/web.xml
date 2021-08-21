@@ -7,7 +7,7 @@
   <!-- Объявляем сервлет -->
   <servlet>
     <servlet-name>ProductsServlet</servlet-name>
-    <servlet-class>com.shepa.servlet.ProductsServlet</servlet-class>
+    <servlet-class>com.shepa.lesson1.servlet.ProductsServlet</servlet-class>
   </servlet>
   <!-- Привязываем сервлет к URL -->
   <servlet-mapping>
