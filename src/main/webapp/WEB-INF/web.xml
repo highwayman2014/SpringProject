@@ -2,17 +2,25 @@
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
-<web-app>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+        id="WebApp_ID" version="3.1">
   <display-name>Archetype Created Web Application</display-name>
-  <!-- Объявляем сервлет -->
+
   <servlet>
-    <servlet-name>ProductsServlet</servlet-name>
-    <servlet-class>com.shepa.lesson1.servlet.ProductsServlet</servlet-class>
+    <servlet-name>mvc-dispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/beans.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
   </servlet>
-  <!-- Привязываем сервлет к URL -->
+
   <servlet-mapping>
-    <servlet-name>ProductsServlet</servlet-name>
-    <url-pattern>/products</url-pattern>
+    <servlet-name>mvc-dispatcher</servlet-name>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
 
 </web-app>
